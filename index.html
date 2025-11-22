@@ -1,47 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hackathon-practice</title>
-    <!-- bootstrap css link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <!-- custom css link  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <div class="col-md-6">
-      <h2>Quick Links</h2>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <a href="./pages/loginform/login.html">Login Form</a>
-        </li>
-        <li class="list-group-item">
-          <a href="./pages/sign-inform/signin.html">Sign Up Form</a>
-        </li>
-      </ul>
-    </div>
+<div>
+  <button onclick="logout()">Log out</button>
+</div>
+=======
+<body>
+  <div>
+    <button onclick="logout()">Log out</button>
+  </div>
 
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2023 Hackathon Practice. All rights reserved.</p>
-    </footer>
-
-    <!-- bootstrap js link -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      // Check if user is logged in
-      if (!localStorage.getItem("loggedInUser")) {
-        window.location.href = "./pages/loginform/login.html";
-      }
-    </script>
-  </body>
-</html>
+  <div id="userInfo" class="m-3">
+    <p id="userFullName" class="fw-bold"></p>
+    <p id="userEmail"></p>
+  </div>
+</body>
