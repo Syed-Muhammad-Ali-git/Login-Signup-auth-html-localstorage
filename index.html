@@ -48,5 +48,11 @@
     ></script>
     <!-- custom js link -->
     <script src="./assets/js/app.js"></script>
+    <script>
+      // Check if user is logged in
+      if (!localStorage.getItem('loggedInUser')) {
+        window.location.href = './loginform/login.html';
+      }
+    </script>
   </body>
 </html>
